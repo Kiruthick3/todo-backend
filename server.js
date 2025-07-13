@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: process.env.CLIENT_URL
+  origin: "todowebap3.netlify.app"
 }));
 app.use(todoRoutes);
 app.use(authRoutes);
